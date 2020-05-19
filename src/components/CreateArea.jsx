@@ -32,6 +32,7 @@ function CreateArea(props) {
           placeholder="Title"
           value={note.title}
         />
+        <br />
         <textarea
           autoComplete="off"
           onChange={handleChange}
@@ -40,7 +41,8 @@ function CreateArea(props) {
           rows="3"
           value={note.content}
         />
-        <button onClick={handleClick}>Add</button>
+        <br />
+        <button onClick={handleClick}>ADD</button>
       </form>
     </div>
   );

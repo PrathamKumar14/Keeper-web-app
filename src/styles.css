@@ -1,5 +1,5 @@
 body {
-  background-color: #fff8f0;
+  background-color: #ebecf0;
 }
 
 .App {
@@ -9,7 +9,7 @@ body {
 
 header {
   /* background-color: #6d3c9d; */
-  background-color: #c6b4d6;
+  background-color: #d4b7ec;
   margin: auto 0px;
   padding: 16px 32px;
   border: 0.5px solid rgba(195, 0, 255, 0.233);
@@ -35,4 +35,66 @@ header h1 {
   -webkit-text-stroke: 1px black;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
+}
+
+form {
+  margin-top: 100px;
+}
+
+input,
+textarea {
+  text-align: center;
+  margin: 5px auto;
+  padding: 50px;
+  width: 500px;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 300px;
+  border: 1px solid rgb(240, 236, 236);
+  /* border-bottom: 2px solid white;
+  border-right: 2px solid white; */
+  padding: 16px;
+  background-color: rgba(222, 224, 224, 0.192);
+  /* box-shadow: 3px 3px 3px 3px rgba(226, 226, 226, 0.719); */
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  height: 40px;
+  width: 400px;
+}
+
+button {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 300px;
+  border: 1px solid rgb(223, 223, 223);
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #c0c0c0;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  input,
+  textarea {
+    width: 250px;
+  }
 }
