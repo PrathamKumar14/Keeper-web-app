@@ -51,8 +51,8 @@ function CreateArea(props) {
       </form>
 
       <h3 className="intro">
-        "<span className="keep">[KEEP]</span> notes of everything you learned is
-        the best practice to remember it for long time."
+        "<span className="keep">&#123;KEEP&#125;</span> notes of everything you
+        learned is the best practice to remember it for long time."
         <br />
         `This is Keep app help you out in that way`
         <br />
