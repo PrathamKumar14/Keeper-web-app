@@ -51,10 +51,17 @@ function CreateArea(props) {
       </form>
 
       <h3 className="intro">
-        "Keep notes of everything you learned is the best practice to remember
-        it for long time.
+        "<span className="keep">[KEEP]</span> notes of everything you learned is
+        the best practice to remember it for long time."
         <br />
-        This is Keep app help you out in that way"
+        `This is Keep app help you out in that way`
+        <br />
+        <a href="https://twitter.com/pratham85086605">
+          <img
+            src="https://img.icons8.com/fluent/48/000000/twitter.png"
+            alt=""
+          />
+        </a>
       </h3>
     </div>
   );

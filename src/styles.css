@@ -54,7 +54,7 @@ header h1 {
 form {
   margin-top: 100px;
   position: relative;
-  left: 50px;
+  left: -10px;
 }
 
 input,
@@ -111,14 +111,26 @@ button:focus {
 
 .intro {
   position: relative;
-  left: 100px;
+  left: 30px;
+  top: 25px;
+  text-align: left;
   padding: 0;
   margin: 0;
+  color: #646464;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.keep {
+  color: #6d3c9d;
 }
 
 .note-img {
   position: relative;
-  right: 0px;
+  right: 10px;
   opacity: 0.6;
 }
 
@@ -132,6 +144,7 @@ button:focus {
 .container {
   text-align: center;
   align-content: center;
+  margin-top: 50px;
 }
 
 .follow-me-btn {
