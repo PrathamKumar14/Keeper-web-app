@@ -44,6 +44,12 @@ function CreateArea(props) {
         <br />
         <button onClick={handleClick}>ADD</button>
       </form>
+
+      <img
+        className="pen-img"
+        src="https://img.icons8.com/cotton/64/000000/pen.png"
+        alt=""
+      />
     </div>
   );
 }

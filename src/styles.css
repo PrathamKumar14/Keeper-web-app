@@ -37,6 +37,12 @@ header h1 {
   font-weight: 900;
 }
 
+.header-pen-img {
+  position: relative;
+  width: 40px;
+  top: 10px;
+}
+
 form {
   margin-top: 100px;
 }
@@ -92,9 +98,27 @@ button:focus {
   outline: none;
 }
 
+.pen-img {
+  position: relative;
+  top: -200px;
+  left: 600px;
+  width: 100px;
+  height: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   input,
   textarea {
     width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pen-img {
+    top: -230px;
+    left: 0px;
+    opacity: 0.2;
+    width: 200px;
+    height: 200px;
   }
 }
