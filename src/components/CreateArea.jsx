@@ -23,7 +23,12 @@ function CreateArea(props) {
   }
 
   return (
-    <div>
+    <div className="div">
+      <img
+        className="note-img"
+        src="https://img.icons8.com/clouds/350/000000/notes-app.png"
+        alt=""
+      />
       <form>
         <input
           autoComplete="off"
@@ -45,11 +50,12 @@ function CreateArea(props) {
         <button onClick={handleClick}>ADD</button>
       </form>
 
-      <img
-        className="pen-img"
-        src="https://img.icons8.com/cotton/64/000000/pen.png"
-        alt=""
-      />
+      <h3 className="intro">
+        "Keep notes of everything you learned is the best practice to remember
+        it for long time.
+        <br />
+        This is Keep app help you out in that way"
+      </h3>
     </div>
   );
 }

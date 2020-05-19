@@ -1,5 +1,6 @@
 body {
   background-color: #ebecf0;
+  overflow-x: hidden;
 }
 
 .App {
@@ -43,8 +44,17 @@ header h1 {
   top: 10px;
 }
 
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   margin-top: 100px;
+  position: relative;
+  left: 50px;
 }
 
 input,
@@ -99,12 +109,17 @@ button:focus {
   outline: none;
 }
 
-.pen-img {
+.intro {
   position: relative;
-  top: -200px;
-  left: 600px;
-  width: 100px;
-  height: 100px;
+  left: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.note-img {
+  position: relative;
+  right: 0px;
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 600px) {
@@ -139,11 +154,11 @@ button:focus {
   color: black;
   margin: 10px;
   opacity: 0;
-  height: 64px;
+  height: 50px;
   transition: opacity 1s, height 1s;
 }
 
 .linkedin {
-  height: 50px;
+  height: 40px;
   padding-bottom: 6px;
 }
