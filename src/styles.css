@@ -1,0 +1,20 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  /* background-color: #6d3c9d; */
+  background-color: #6d3c9d;
+  margin: auto 0px;
+  padding: 16px 32px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+header h1 {
+  color: #ffe0bf;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
