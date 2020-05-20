@@ -47,7 +47,9 @@ function CreateArea(props) {
           value={note.content}
         />
         <br />
-        <button onClick={handleClick}>ADD</button>
+        <button className="add-btn" onClick={handleClick}>
+          ADD
+        </button>
       </form>
 
       <h3 className="intro">
