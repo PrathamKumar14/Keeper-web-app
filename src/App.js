@@ -43,6 +43,7 @@ function App() {
         </div>
       ) : (
         <div>
+          <Header />
           <CreateArea onAdd={addNote} />
           {notes.map((note, index) => {
             return (
