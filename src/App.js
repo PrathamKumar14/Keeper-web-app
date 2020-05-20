@@ -24,20 +24,39 @@ function App() {
 
   return (
     <div className="bg">
-      <Header />
-      <CreateArea onAdd={addNote} />
-      {notes.map((note, index) => {
-        return (
-          <Note
-            key={index}
-            id={index}
-            title={note.title}
-            content={note.content}
-            onDelete={deleteNote}
-          />
-        );
-      })}
-      <Footer />
+      {notes.length === 0 ? (
+        <div>
+          <Header />
+          <CreateArea onAdd={addNote} />
+          {notes.map((note, index) => {
+            return (
+              <Note
+                key={index}
+                id={index}
+                title={note.title}
+                content={note.content}
+                onDelete={deleteNote}
+              />
+            );
+          })}
+          <Footer />
+        </div>
+      ) : (
+        <div>
+          <CreateArea onAdd={addNote} />
+          {notes.map((note, index) => {
+            return (
+              <Note
+                key={index}
+                id={index}
+                title={note.title}
+                content={note.content}
+                onDelete={deleteNote}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
