@@ -75,6 +75,7 @@ textarea {
   /* box-shadow: 3px 3px 3px 3px rgba(226, 226, 226, 0.719); */
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
   text-shadow: 1px 1px 0 #fff;
+  text-transform: capitalize;
 }
 
 input:focus,
@@ -185,19 +186,31 @@ textarea {
 }
 
 .note {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
-  width: 240px;
-  margin: 16px;
+  margin: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px solid rgb(223, 223, 223);
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #c0c0c0;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
   float: left;
 }
+
+.note:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
 .note h1 {
-  font-size: 1.1em;
+  text-transform: capitalize;
+  font-size: 1.5rem;
   margin-bottom: 6px;
 }
 .note p {
+  text-transform: capitalize;
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
@@ -208,10 +221,10 @@ textarea {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #f5ba13;
-  border: none;
-  width: 36px;
-  height: 36px;
+  padding: 10px;
+  color: #6d3c9d;
+  border: 1px solid black;
+  border-radius: 20px;
   cursor: pointer;
   outline: none;
 }
