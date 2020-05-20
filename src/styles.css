@@ -75,12 +75,19 @@ textarea {
   /* box-shadow: 3px 3px 3px 3px rgba(226, 226, 226, 0.719); */
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
   text-shadow: 1px 1px 0 #fff;
-  text-transform: capitalize;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+input::first-letter {
+  text-transform: capitalize;
+}
+
+textarea::first-letter {
+  text-transform: capitalize;
 }
 
 textarea {
@@ -205,26 +212,39 @@ textarea {
 }
 
 .note h1 {
-  text-transform: capitalize;
   font-size: 1.5rem;
   margin-bottom: 6px;
 }
+
+.note hr {
+  color: #6d3c9d;
+  background-color: #6d3c9d;
+  width: 150px;
+  position: relative;
+  float: left;
+}
+
 .note p {
-  text-transform: capitalize;
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
+.note h1::first-letter {
+  text-transform: capitalize;
+}
+
+.note p::first-letter {
+  text-transform: capitalize;
+}
+
 .note button {
+  background-color: transparent;
   position: relative;
   float: right;
   margin-right: 10px;
-  padding: 10px;
-  color: #6d3c9d;
-  border: 1px solid black;
-  border-radius: 20px;
+  border: none;
   cursor: pointer;
   outline: none;
 }

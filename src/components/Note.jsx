@@ -9,8 +9,15 @@ function Note(props) {
     <div className="note">
       <div>
         <h1>{props.title}</h1>
+        <hr />
+        <br />
         <p>{props.content}</p>
-        <button onClick={handleClick}>DELETE</button>
+        <button onClick={handleClick}>
+          <img
+            src="https://img.icons8.com/nolan/32/delete-forever.png"
+            alt=""
+          />
+        </button>
       </div>
     </div>
   );
