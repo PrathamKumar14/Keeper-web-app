@@ -143,20 +143,6 @@ textarea {
   opacity: 0.6;
 }
 
-@media only screen and (max-width: 600px) {
-  input,
-  textarea {
-    width: 250px;
-  }
-}
-/* 
-.note {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-} */
-
 .container {
   text-align: center;
   align-content: center;
@@ -247,4 +233,30 @@ textarea {
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    text-align: center;
+    position: relative;
+    left: -100px;
+    margin-top: 10px;
+  }
+
+  input,
+  textarea {
+    width: 250px;
+  }
+
+  .div {
+    padding: 0;
+  }
+
+  .note-img {
+    opacity: 0;
+  }
+
+  .intro {
+    opacity: 0;
+  }
 }
